@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 
+/* Universal Styling */
+
 :root {
     --main-colour: rgba(251, 248, 241);
     --secondary-colour: rgba(66, 95, 87);
@@ -27,12 +29,6 @@
     border: solid 3px blue;
 }
 
-/* 
-****************************************************************
-Main Styling - Start - All Devices
-****************************************************************
-*/
-
 html {
     scroll-behavior: smooth;
 }
@@ -49,12 +45,23 @@ body {
     background-color: var(--main-colour);
 }
 
+/* Navigation Bar Styling */
+
 .navigation-bar {
-    height: 70vh;
+    max-height: fit-content;
     width: 100vw;
     background-color: var(--secondary-colour);
     color: var(--main-colour);
     letter-spacing: 0.1rem;
+}
+
+a:first-of-type {
+    text-decoration: none;
+    color: var(--main-colour);
+}
+
+a:first-of-type:hover {
+    color: var(--tertiary-colour);
 }
 
 .logo > span:nth-of-type(odd) {
@@ -67,7 +74,13 @@ body {
 }
 
 .logo > div {
-    height: 10vh;
-    max-width: 25%;
-    background-color: aqua;
+    max-height: fit-content;
+    max-width: 225px;
+    text-align: right;
+    margin-top: -1.5rem;
+    font-size: 2rem;
+}
+
+.navigation-links a {
+    font-size: 2rem;
 }
