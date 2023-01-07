@@ -58,8 +58,7 @@ button {
     outline: none;
 }
 
-a:hover,
-button:hover {
+a:hover {
     color: var(--tertiary-colour);
 }
 
