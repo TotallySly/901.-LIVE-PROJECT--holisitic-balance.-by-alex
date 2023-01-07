@@ -46,6 +46,28 @@ body {
     background-color: var(--main-colour);
 }
 
+a {
+    text-decoration: none;
+    color: var(--main-colour);
+}
+
+button {
+    background: none;
+    color: var(--main-colour);
+    border: none;
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a:hover,
+button:hover {
+    color: var(--tertiary-colour);
+}
+
 /* Navigation Bar Styling */
 
 /* Logo */
@@ -55,15 +77,6 @@ body {
     background-color: var(--secondary-colour);
     color: var(--main-colour);
     letter-spacing: 0.1rem;
-}
-
-a:first-of-type {
-    text-decoration: none;
-    color: var(--main-colour);
-}
-
-a:first-of-type:hover {
-    color: var(--tertiary-colour);
 }
 
 .logo > span:nth-of-type(odd) {
@@ -92,10 +105,33 @@ a:first-of-type:hover {
 }
 
 .fa-bars {
-    text-align: end;
+    margin-right: 0.5rem;
     font-size: 2rem;
 }
 
-.navigation-links a {
+/* Navigation Links */
+.navigation-links {
+    text-transform: uppercase;
+}
+
+.navigation-links {
     font-size: 2rem;
+}
+
+.chevron-container {
+    height: 200%;
+    width: 100%;
+    display: flex;
+}
+
+.fa-chevron-down {
+    font-size: 1.5rem;
+}
+
+.navigation-links ul {
+    margin-bottom: auto;
+}
+
+.navigation-links li {
+    font-size: 1.2rem;
 }
