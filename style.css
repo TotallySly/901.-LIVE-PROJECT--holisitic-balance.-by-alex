@@ -58,14 +58,18 @@ button {
     outline: none;
 }
 
+a:hover,
+button:hover {
+    color: var(--tertiary-colour);
+}
+
 ul,
 ol {
     list-style: none;
 }
 
-a:hover,
-button:hover {
-    color: var(--tertiary-colour);
+.display-none {
+    display: none;
 }
 
 /* Navigation Bar Styling */
