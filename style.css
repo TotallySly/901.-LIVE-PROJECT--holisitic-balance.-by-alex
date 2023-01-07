@@ -25,7 +25,8 @@
 .col-9,
 .col-10,
 .col-11,
-.col-12 {
+.col-12,
+.col-sm {
     border: solid 3px blue;
 }
 
@@ -47,6 +48,7 @@ body {
 
 /* Navigation Bar Styling */
 
+/* Logo */
 .navigation-bar {
     max-height: fit-content;
     width: 100vw;
@@ -78,6 +80,19 @@ a:first-of-type:hover {
     max-width: 225px;
     text-align: right;
     margin-top: -1.5rem;
+    font-size: 2rem;
+}
+
+/* Hamburger */
+.hamburger-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-bars {
+    text-align: end;
     font-size: 2rem;
 }
 
