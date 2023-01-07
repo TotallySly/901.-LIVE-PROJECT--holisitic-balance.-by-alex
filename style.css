@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+:root {
+    --main-colour: rgba(251, 248, 241);
+    --secondary-colour: rgba(66, 95, 87);
+    --tertiary-colour: rgba(206, 229, 208, 0.3);
+}
+
+.row {
+    border: solid 3px red;
+}
+
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    border: solid 3px blue;
+}
+
+/* 
+****************************************************************
+Main Styling - Start - All Devices
+****************************************************************
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Zen Loop', cursive;
+    color: black;
+    background-color: var(--main-colour);
+}
+
+.navigation-bar {
+    height: 70vh;
+    width: 100vw;
+    background-color: var(--secondary-colour);
+    color: var(--main-colour);
+    letter-spacing: 0.1rem;
+}
+
+.logo > span:nth-of-type(odd) {
+    font-size: 4.5rem;
+}
+
+.logo > span:nth-of-type(even) {
+    font-size: 2.7rem;
+    margin-left: -0.3rem;
+}
+
+.logo > div {
+    height: 10vh;
+    max-width: 25%;
+    background-color: aqua;
+}
