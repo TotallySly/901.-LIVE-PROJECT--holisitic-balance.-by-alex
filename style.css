@@ -118,17 +118,11 @@ ol {
 }
 
 .navigation-links {
-    font-size: 2rem;
-}
-
-.chevron-container {
-    height: 200%;
-    width: 100%;
-    display: flex;
+    font-size: 1.4rem;
 }
 
 .fa-chevron-down {
-    font-size: 1.5rem;
+    font-size: 0.55rem;
 }
 
 .navigation-links ul {
@@ -136,5 +130,19 @@ ol {
 }
 
 .navigation-links li {
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 756px) {
+    .navigation-links {
+        font-size: 1.8rem;
+    }
+
+    .fa-chevron-down {
+        font-size: 0.8rem;
+    }
+
+    .navigation-links li {
+        font-size: 1.3rem;
+    }
 }
