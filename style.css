@@ -71,6 +71,10 @@ ol {
     display: none;
 }
 
+.display {
+    display: block;
+}
+
 /* Navigation Bar Styling */
 
 /* Logo */
@@ -131,6 +135,9 @@ ol {
 
 .navigation-links li {
     font-size: 1rem;
+}
+
+@media (max-width: 756px) {
 }
 
 @media (min-width: 756px) {

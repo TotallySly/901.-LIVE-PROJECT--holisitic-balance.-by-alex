@@ -6,8 +6,15 @@
 const hamburgerMenu = document.querySelector('.fa-bars')
 const navigationLinks = document.querySelector('.navigation-links')
 
+if (window.innerWidth < 575) {
+    navigationLinks.classList.add('display-none')
+} else {
+    navigationLinks.classList.remove('display-none')
+}
+
 hamburgerMenu.addEventListener('click', () => {
     navigationLinks.classList.toggle('display-none')
+    console.log('hello')
 })
 
 /**
