@@ -6,8 +6,14 @@ hamburgerMenu.addEventListener('click', () => {
 })
 
 const chevronMenu = document.querySelector('.fa-chevron-down')
-const smallMenu = document.querySelector('.smaller-menu-items')
+const dropDownMenu = document.querySelector('.smaller-menu-items')
 
 chevronMenu.addEventListener('click', () => {
-    smallMenu.classList.toggle('display-none')
+    dropDownMenu.classList.remove('display-none')
+
+    if (!dropDownMenu.classList.contains('display-none')) {
+        chevronMenu.addEventListener('click', () => {
+            dropDownMenu.classList.toggle('display-none')
+        })
+    }
 })
