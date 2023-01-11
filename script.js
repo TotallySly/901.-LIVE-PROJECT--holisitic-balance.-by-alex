@@ -4,6 +4,7 @@
  */
 
 const hamburgerMenu = document.querySelector('.fa-bars')
+const hamburgerCross = document.querySelector('.fa-x')
 const navigationLinks = document.querySelector('.navigation-links')
 
 if (window.innerWidth < 575) {
@@ -14,7 +15,14 @@ if (window.innerWidth < 575) {
 
 hamburgerMenu.addEventListener('click', () => {
     navigationLinks.classList.toggle('display-none')
-    console.log('hello')
+    hamburgerMenu.classList.add('display-none')
+    hamburgerCross.classList.remove('display-none')
+})
+
+hamburgerCross.addEventListener('click', () => {
+    navigationLinks.classList.toggle('display-none')
+    hamburgerMenu.classList.remove('display-none')
+    hamburgerCross.classList.add('display-none')
 })
 
 /**

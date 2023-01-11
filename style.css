@@ -86,16 +86,16 @@ ol {
     letter-spacing: 0.1rem;
 }
 
-.logo > span:nth-of-type(odd) {
+.navigation-bar .logo > span:nth-of-type(odd) {
     font-size: 4.5rem;
 }
 
-.logo > span:nth-of-type(even) {
+.navigation-bar .logo > span:nth-of-type(even) {
     font-size: 2.7rem;
     margin-left: -0.3rem;
 }
 
-.logo > div {
+.navigation-bar .logo > div {
     max-height: fit-content;
     max-width: 225px;
     text-align: right;
@@ -111,7 +111,8 @@ ol {
     justify-content: flex-end;
 }
 
-.fa-bars {
+.hamburger-container .fa-bars,
+.fa-x {
     margin-right: 0.5rem;
     font-size: 2rem;
 }
@@ -119,13 +120,10 @@ ol {
 /* Navigation Links */
 .navigation-links {
     text-transform: uppercase;
-}
-
-.navigation-links {
     font-size: 1.4rem;
 }
 
-.fa-chevron-down {
+.navigation-links .fa-chevron-down {
     font-size: 0.55rem;
 }
 
@@ -137,15 +135,12 @@ ol {
     font-size: 1rem;
 }
 
-@media (max-width: 756px) {
-}
-
 @media (min-width: 756px) {
     .navigation-links {
         font-size: 1.8rem;
     }
 
-    .fa-chevron-down {
+    .navigation-links .fa-chevron-down {
         font-size: 0.8rem;
     }
 
