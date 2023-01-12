@@ -58,10 +58,6 @@ button {
     outline: none;
 }
 
-a:hover {
-    color: var(--tertiary-colour);
-}
-
 ul,
 ol {
     list-style: none;
@@ -117,6 +113,14 @@ ol {
     font-size: 2rem;
 }
 
+.hamburger-container i:hover {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--tertiary-colour);
+    font-size: 2.5rem;
+    transition: all ease-in 1s;
+}
+
 /* Navigation Links */
 .navigation-links {
     text-transform: uppercase;
@@ -133,6 +137,18 @@ ol {
 
 .navigation-links li {
     font-size: 1rem;
+}
+
+.navigation-links a {
+    padding: 0.5;
+}
+
+.navigation-links a:hover,
+i:hover {
+    background-color: var(--tertiary-colour);
+    border-radius: 10px;
+    padding: 0.3rem;
+    transition: all ease-in 1s;
 }
 
 @media (min-width: 756px) {
