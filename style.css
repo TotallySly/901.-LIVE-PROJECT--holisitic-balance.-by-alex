@@ -9,7 +9,7 @@
     --tertiary-colour: rgba(206, 229, 208, 0.3);
 }
 
-.row {
+/* .row {
     border: solid 3px red;
 }
 
@@ -28,7 +28,7 @@
 .col-12,
 .col-sm {
     border: solid 3px blue;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -82,6 +82,10 @@ ol {
     letter-spacing: 0.1rem;
 }
 
+.navigation-bar .logo {
+    padding-left: 0.5rem;
+}
+
 .navigation-bar .logo > span:nth-of-type(odd) {
     font-size: 4.5rem;
 }
@@ -125,6 +129,7 @@ ol {
 .navigation-links {
     text-transform: uppercase;
     font-size: 1.4rem;
+    padding-left: 0.5rem;
 }
 
 .navigation-links .fa-chevron-down {
@@ -149,6 +154,51 @@ i:hover {
     border-radius: 10px;
     padding: 0.3rem;
     transition: all ease-in 1s;
+}
+
+/* Carousel Styling */
+
+.container {
+    width: 90%;
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+.container .carousel {
+    border: 2px solid black;
+    height: 50vh;
+    width: 90vw;
+    position: relative;
+}
+
+.container .carousel .slider {
+    border: 1px solid red;
+    display: flex;
+    height: 100%;
+    width: 150%;
+    transform: translateX(0);
+    transition: transform ease-in-out 2s;
+}
+
+.container .carousel .slider .slide {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+
+.arrow.left {
+    left: 300px;
+}
+
+.arrow.right {
+    right: 300px;
 }
 
 @media (min-width: 756px) {

@@ -3,8 +3,12 @@
  * this class is toggled when the user clicks on the Hamburger Menu
  */
 
-const hamburgerMenu = document.querySelector('.fa-bars')
-const hamburgerCross = document.querySelector('.fa-x')
+/**
+ * HAMBURGER NAVIGATION
+ */
+
+const hamburgerOpen = document.querySelector('.fa-bars')
+const hamburgerClose = document.querySelector('.fa-x')
 const navigationLinks = document.querySelector('.navigation-links')
 
 if (window.innerWidth < 575) {
@@ -13,16 +17,16 @@ if (window.innerWidth < 575) {
     navigationLinks.classList.remove('display-none')
 }
 
-hamburgerMenu.addEventListener('click', () => {
+hamburgerOpen.addEventListener('click', () => {
     navigationLinks.classList.toggle('display-none')
-    hamburgerMenu.classList.add('display-none')
-    hamburgerCross.classList.remove('display-none')
+    hamburgerOpen.classList.add('display-none')
+    hamburgerClose.classList.remove('display-none')
 })
 
-hamburgerCross.addEventListener('click', () => {
+hamburgerClose.addEventListener('click', () => {
     navigationLinks.classList.toggle('display-none')
-    hamburgerMenu.classList.remove('display-none')
-    hamburgerCross.classList.add('display-none')
+    hamburgerOpen.classList.remove('display-none')
+    hamburgerClose.classList.add('display-none')
 })
 
 /**
@@ -47,4 +51,61 @@ chevronMenu.addEventListener('click', () => {
             dropDownMenu.classList.toggle('display-none')
         })
     }
+})
+
+/**
+ * CAROUSEL
+ */
+
+const slider = document.querySelector('.slider')
+const arrowLeft = document.querySelector('.left')
+const arrowRight = document.querySelector('.right')
+
+const slides = document.querySelectorAll('.slide')
+
+let index = 0
+
+let interval = setInterval(run, 3000)
+
+function run() {
+    index++
+    changeSlides()
+}
+
+function changeSlides() {
+    if (index > slides.length - 1) {
+        index = 0
+    } else if (index < 0) {
+        index = slides.length - 1
+    }
+
+    // This is based on there being 5 items within the content section.
+    // 100% divided by 4 is 25 %. This will need to be changed depending
+    // on how many content slides there are.
+
+    // .container .carousel .slider {
+    //     width: 400%;
+    // }
+    //
+
+    slider.style.transform = `translateX(${-index * 50}%)`
+}
+
+function resetInterval() {
+    clearInterval(interval)
+    interval = setInterval(run, 3000)
+}
+
+arrowRight.addEventListener('click', () => {
+    index++
+
+    changeSlides()
+    resetInterval()
+})
+
+arrowLeft.addEventListener('click', () => {
+    index--
+
+    changeSlides()
+    resetInterval()
 })
