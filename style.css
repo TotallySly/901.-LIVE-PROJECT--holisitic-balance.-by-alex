@@ -32,6 +32,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -165,18 +166,18 @@ i:hover {
 .container {
     width: 90vw;
     overflow: hidden;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .container .carousel {
-    height: fit-content;
+    height: 100%;
     width: 95vw;
     position: relative;
 }
 
 .container .carousel .slider {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.7rem;
     height: 100%;
     width: 200%;
     transform: translateX(0);
@@ -190,7 +191,6 @@ i:hover {
 .container .carousel .slider .slide img {
     object-fit: contain;
     border-radius: 10px;
-    margin-right: 10rem;
 }
 
 .controls .arrow {
@@ -200,11 +200,11 @@ i:hover {
 }
 
 .arrow.left {
-    left: 30px;
+    left: 50px;
 }
 
 .arrow.right {
-    right: 30px;
+    right: 50px;
 }
 
 .morescreen {
@@ -223,4 +223,8 @@ i:hover {
     .navigation-links li {
         font-size: 1.3rem;
     }
+
+    /* .container .carousel {
+        border-radius: 10px;
+    } */
 }
