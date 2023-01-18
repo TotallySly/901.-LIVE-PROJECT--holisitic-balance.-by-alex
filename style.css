@@ -169,15 +169,14 @@ i:hover {
 }
 
 .container .carousel {
-    border: 2px solid black;
     height: fit-content;
     width: 95vw;
     position: relative;
 }
 
 .container .carousel .slider {
-    border: 1px solid red;
     display: flex;
+    gap: 1.5rem;
     height: 100%;
     width: 200%;
     transform: translateX(0);
@@ -190,6 +189,8 @@ i:hover {
 
 .container .carousel .slider .slide img {
     object-fit: contain;
+    border-radius: 10px;
+    margin-right: 10rem;
 }
 
 .controls .arrow {

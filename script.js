@@ -65,7 +65,7 @@ const slides = document.querySelectorAll('.slide')
 
 let index = 0
 
-let interval = setInterval(run, 3000)
+let interval = setInterval(run, 10000)
 
 function run() {
     index++
@@ -93,7 +93,7 @@ function changeSlides() {
 
 function resetInterval() {
     clearInterval(interval)
-    interval = setInterval(run, 3000)
+    interval = setInterval(run, 10000)
 }
 
 arrowRight.addEventListener('click', () => {
