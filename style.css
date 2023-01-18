@@ -40,6 +40,11 @@ html {
     padding: 0;
 }
 
+.fluid-sizing {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Zen Loop', cursive;
     color: black;
@@ -157,17 +162,16 @@ i:hover {
 }
 
 /* Carousel Styling */
-
 .container {
-    width: 90%;
+    width: 90vw;
     overflow: hidden;
     margin-top: 5rem;
 }
 
 .container .carousel {
     border: 2px solid black;
-    height: 50vh;
-    width: 90vw;
+    height: fit-content;
+    width: 95vw;
     position: relative;
 }
 
@@ -175,16 +179,17 @@ i:hover {
     border: 1px solid red;
     display: flex;
     height: 100%;
-    width: 150%;
+    width: 200%;
     transform: translateX(0);
     transition: transform ease-in-out 2s;
 }
 
 .container .carousel .slider .slide {
     flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.container .carousel .slider .slide img {
+    object-fit: contain;
 }
 
 .controls .arrow {
@@ -194,11 +199,15 @@ i:hover {
 }
 
 .arrow.left {
-    left: 300px;
+    left: 30px;
 }
 
 .arrow.right {
-    right: 300px;
+    right: 30px;
+}
+
+.morescreen {
+    height: 30vh;
 }
 
 @media (min-width: 756px) {
