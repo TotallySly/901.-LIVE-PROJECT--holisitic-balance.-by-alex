@@ -32,7 +32,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 * {
@@ -164,12 +164,11 @@ i:hover {
 
 /* Carousel Styling */
 .container-fluid {
-    width: 200%;
+    width: 95vw;
 }
 
 .carousel-container {
-    height: 100vh;
-    width: 100vw;
+    width: 95vw;
     overflow: hidden;
 }
 
@@ -177,11 +176,20 @@ i:hover {
     height: 100%;
     width: 100%;
     position: relative;
-    padding: ;
 }
 
 .carousel-container .carousel .slider {
     display: flex;
+    gap: 10px;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform ease-in-out 2s;
+}
+
+.carousel-container .carousel .slider {
+    display: flex;
+    gap: 10px;
     height: 100%;
     width: 200%;
     transform: translateX(0);
@@ -190,13 +198,27 @@ i:hover {
 
 .carousel-container .carousel .slider .slide {
     flex-basis: 100%;
+    position: relative;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.carousel-container .carousel .slider .slide .overlay {
+    position: absolute;
+    background-size: cover;
+    border-radius: 10px;
+    max-height: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .carousel-container .carousel .slider .slide img {
     border-radius: 10px;
-    max-height: 600px;
-    width: 97vw;
-    margin-left: 0.5rem;
+    max-height: 75vh;
+    width: 100vw;
     object-fit: cover;
 }
 
