@@ -198,6 +198,16 @@ i:hover {
     flex-basis: 100%;
     border-radius: 10px;
     background-color: pink;
+    position: relative;
+}
+
+.carousel-container .carousel .slider .slide p {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-slide-img-one {
@@ -207,6 +217,17 @@ i:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.carousel-slide-img-one::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--tertiary-colour);
+    opacity: 0.7;
 }
 
 .carousel-slide-img-two {
@@ -236,6 +257,14 @@ i:hover {
     height: 30vh;
 }
 
+/* TODO SORT OUT THE MEDIA FOR THE CAROUSEL CONTAINER */
+
+@media (max-width: 756px) {
+    .carousel-container {
+        width: 80vw;
+    }
+}
+
 @media (min-width: 756px) {
     .navigation-links {
         font-size: 1.8rem;
@@ -248,8 +277,4 @@ i:hover {
     .navigation-links li {
         font-size: 1.3rem;
     }
-
-    /* .container .carousel {
-        border-radius: 10px;
-    } */
 }
