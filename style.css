@@ -164,30 +164,28 @@ i:hover {
 
 /* Carousel Styling */
 .container-fluid {
-    width: 95vw;
+    height: 100vh;
 }
 
 .carousel-container {
+    border-radius: 10px;
     width: 95vw;
+    height: 75vh;
+    margin-top: 2rem;
+    margin-left: 2rem;
     overflow: hidden;
 }
 
 .carousel-container .carousel {
+    border-radius: 10px;
     height: 100%;
     width: 100%;
     position: relative;
+    background-color: red;
 }
 
 .carousel-container .carousel .slider {
-    display: flex;
-    gap: 10px;
-    height: 100%;
-    width: 200%;
-    transform: translateX(0);
-    transition: transform ease-in-out 2s;
-}
-
-.carousel-container .carousel .slider {
+    border-radius: 10px;
     display: flex;
     gap: 10px;
     height: 100%;
@@ -198,28 +196,26 @@ i:hover {
 
 .carousel-container .carousel .slider .slide {
     flex-basis: 100%;
-    position: relative;
-    margin-top: 1rem;
-    margin-right: 2rem;
+    border-radius: 10px;
+    background-color: pink;
 }
 
-.carousel-container .carousel .slider .slide .overlay {
-    position: absolute;
+.carousel-slide-img-one {
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/massage-stock-image.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
-    max-height: 600px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-position: center center;
 }
 
-.carousel-container .carousel .slider .slide img {
-    border-radius: 10px;
-    max-height: 75vh;
-    width: 100vw;
-    object-fit: cover;
+.carousel-slide-img-two {
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/yoga-pose-marmaid-on-rock.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .controls .arrow {
