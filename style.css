@@ -163,34 +163,41 @@ i:hover {
 }
 
 /* Carousel Styling */
-.container {
-    width: 90vw;
+.container-fluid {
+    width: 200%;
+}
+
+.carousel-container {
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
-    margin-top: 1rem;
 }
 
-.container .carousel {
+.carousel-container .carousel {
     height: 100%;
-    width: 95vw;
+    width: 100%;
     position: relative;
+    padding: ;
 }
 
-.container .carousel .slider {
+.carousel-container .carousel .slider {
     display: flex;
-    gap: 1.7rem;
     height: 100%;
     width: 200%;
     transform: translateX(0);
     transition: transform ease-in-out 2s;
 }
 
-.container .carousel .slider .slide {
+.carousel-container .carousel .slider .slide {
     flex-basis: 100%;
 }
 
-.container .carousel .slider .slide img {
-    object-fit: contain;
+.carousel-container .carousel .slider .slide img {
     border-radius: 10px;
+    max-height: 600px;
+    width: 97vw;
+    margin-left: 0.5rem;
+    object-fit: cover;
 }
 
 .controls .arrow {
