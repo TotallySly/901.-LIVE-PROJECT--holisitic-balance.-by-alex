@@ -86,6 +86,7 @@ ol {
     background-color: var(--secondary-colour);
     color: var(--main-colour);
     letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
 }
 
 .navigation-bar .logo {
@@ -285,17 +286,8 @@ h3 {
 /* TODO SORT OUT THE MEDIA FOR THE CAROUSEL CONTAINER */
 
 @media (min-width: 768px) {
-    .carousel-container {
-        width: 90vw;
-        height: 75vh;
-    }
-
-    .controls .arrow .h-chevron-left,
-    .h-chevron-right {
-        font-size: 2rem;
-    }
-
     .navigation-links {
+        text-align: center;
         font-size: 1.8rem;
     }
 
@@ -307,16 +299,33 @@ h3 {
         font-size: 1.3rem;
     }
 
+    .carousel-container {
+        width: 90vw;
+        height: 75vh;
+    }
+
     .carousel-container .carousel .slider .slide h1 {
         font-size: 4rem;
-        top: 45vh;
-        left: 2.5vw;
+        width: fit-content;
+        top: 50vh;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .carousel-container .carousel .slider .slide h3 {
+        width: fit-content;
         font-size: 2rem;
-        bottom: 5vh;
-        left: 5vw;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .controls .arrow .h-chevron-left,
+    .h-chevron-right {
+        font-size: 2rem;
     }
 }
 
