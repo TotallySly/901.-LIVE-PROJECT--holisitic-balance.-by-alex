@@ -49,7 +49,7 @@ html {
 body {
     font-family: 'Zen Loop', cursive;
     color: black;
-    background-color: var(--main-colour);
+    background-color: var(--tertiary-colour);
 }
 
 a {
@@ -171,23 +171,20 @@ i:hover {
     border-radius: 10px;
     width: 95vw;
     height: 75vh;
-    margin-top: 2rem;
+    padding-top: 2rem;
     margin-left: 2rem;
     overflow: hidden;
 }
 
 .carousel-container .carousel {
-    border-radius: 10px;
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: red;
 }
 
 .carousel-container .carousel .slider {
-    border-radius: 10px;
     display: flex;
-    gap: 10px;
+    gap: 1px;
     height: 100%;
     width: 200%;
     transform: translateX(0);
@@ -196,12 +193,11 @@ i:hover {
 
 .carousel-container .carousel .slider .slide {
     flex-basis: 100%;
-    border-radius: 10px;
-    background-color: pink;
     position: relative;
 }
 
-.carousel-container .carousel .slider .slide p {
+.carousel-container .carousel .slider .slide h1,
+h3 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -217,6 +213,8 @@ i:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 
 .carousel-slide-img-one::after {
@@ -226,7 +224,6 @@ i:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--tertiary-colour);
     opacity: 0.7;
 }
 
@@ -237,6 +234,8 @@ i:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 
 .controls .arrow {
@@ -245,12 +244,19 @@ i:hover {
     top: 50%;
 }
 
-.arrow.left {
-    left: 50px;
+.controls .arrow.left {
+    left: 10px;
 }
 
-.arrow.right {
-    right: 50px;
+.controls .arrow.right {
+    right: 10px;
+}
+
+.controls .arrow .h-chevron-left,
+.h-chevron-right {
+    border-radius: 10px;
+    color: var(--secondary-colour);
+    background-color: var(--tertiary-colour);
 }
 
 .morescreen {
@@ -262,6 +268,12 @@ i:hover {
 @media (max-width: 756px) {
     .carousel-container {
         width: 80vw;
+        height: 50vh;
+    }
+
+    .controls .arrow .h-chevron-left,
+    .h-chevron-right {
+        font-size: 1.5rem;
     }
 }
 
