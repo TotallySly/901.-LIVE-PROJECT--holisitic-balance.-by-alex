@@ -47,8 +47,16 @@ html {
     height: auto;
 }
 
+.container-reveal {
+    background-color: var(--tertiary-colour);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
 body {
     font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    letter-spacing: 1.5px;
     color: black;
     background-color: var(--tertiary-colour);
 }
@@ -90,6 +98,7 @@ ol {
 }
 
 .navigation-bar .logo {
+    font-weight: 400;
     padding-left: 0.5rem;
 }
 
@@ -120,20 +129,21 @@ ol {
 
 .hamburger-container .fa-bars,
 .fa-x {
-    margin-right: 0.5rem;
-    font-size: 2rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .hamburger-container i:hover {
     padding: 1rem;
     border-radius: 50%;
     background-color: var(--tertiary-colour);
-    font-size: 2.5rem;
-    transition: all ease-in 1s;
+    font-size: 1.7rem;
+    transition: all ease-in 0.7s;
 }
 
 /* Navigation Links */
 .navigation-links {
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 1.4rem;
     padding-left: 0.5rem;
@@ -282,6 +292,7 @@ h3 {
 .navigation-heading {
     margin-top: 5rem;
     font-size: 2rem;
+    font-weight: bold;
     text-align: center;
     font-family: var(--nav-heading-font);
 }
@@ -289,8 +300,13 @@ h3 {
 .container-about-me {
     margin-top: 2.5rem;
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(1, 1fr);
-    border: solid 2px red;
+    height: 50vh;
+}
+
+.container-about-me img {
+    border-radius: 10px;
 }
 
 /* TODO SORT OUT THE MEDIA FOR THE CAROUSEL CONTAINER */
@@ -343,6 +359,14 @@ h3 {
     /* About Me */
     .navigation-heading {
         font-size: 4rem;
+    }
+
+    .container-about-me {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-about-me p {
+        font-size: 1.7rem;
     }
 }
 
