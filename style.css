@@ -7,6 +7,7 @@
     --main-colour: rgba(251, 248, 241);
     --secondary-colour: rgba(66, 95, 87);
     --tertiary-colour: rgba(206, 229, 208, 0.3);
+    --nav-heading-font: 'Oooh Baby', cursive;
 }
 
 /* .row {
@@ -32,7 +33,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 * {
@@ -78,7 +79,6 @@ ol {
 }
 
 /* Navigation Bar Styling */
-
 /* Logo */
 .navigation-bar {
     max-height: fit-content;
@@ -165,7 +165,7 @@ i:hover {
 
 /* Carousel Styling */
 .container-fluid {
-    height: 100vh;
+    height: max-content;
 }
 
 .carousel-container {
@@ -279,13 +279,24 @@ h3 {
     background-color: var(--tertiary-colour);
 }
 
-.morescreen {
-    height: 30vh;
+.navigation-heading {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--nav-heading-font);
+}
+
+.container-about-me {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: solid 2px red;
 }
 
 /* TODO SORT OUT THE MEDIA FOR THE CAROUSEL CONTAINER */
 
 @media (min-width: 768px) {
+    /* Navigation Bar */
     .navigation-links {
         text-align: center;
         font-size: 1.8rem;
@@ -299,6 +310,7 @@ h3 {
         font-size: 1.3rem;
     }
 
+    /* Carousel */
     .carousel-container {
         width: 90vw;
         height: 75vh;
@@ -326,6 +338,11 @@ h3 {
     .controls .arrow .h-chevron-left,
     .h-chevron-right {
         font-size: 2rem;
+    }
+
+    /* About Me */
+    .navigation-heading {
+        font-size: 4rem;
     }
 }
 
