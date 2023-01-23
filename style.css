@@ -60,9 +60,23 @@ html {
 }
 
 .container-reveal {
+    text-align: center;
+    max-width: 50rem;
     background-color: var(--tertiary-colour);
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
+}
+
+.container-reveal p {
+    margin-bottom: 0;
+}
+
+.navigation-heading {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--nav-heading-font);
 }
 
 .container-fluid {
@@ -304,25 +318,34 @@ h3 {
     background-color: var(--tertiary-colour);
 }
 
-.navigation-heading {
-    margin-top: 5rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    font-family: var(--nav-heading-font);
-}
-
+/* About Me */
 .container-about-me {
     height: max-content;
     margin-top: 2.5rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
 }
 
 .container-about-me img {
     border-radius: 10px;
+}
+
+/* Massage Information */
+.container-massage-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+    height: 100vh;
+}
+
+.container-massage-info a {
+    color: var(--secondary-colour);
+    font-weight: bold;
 }
 
 /* TODO SORT OUT THE MEDIA FOR THE CAROUSEL CONTAINER */
@@ -377,8 +400,15 @@ h3 {
         font-size: 4rem;
     }
 
-    .container-about-me p {
+    .container-about-me,
+    .container-massage-info p {
         font-size: 1.7rem;
+    }
+
+    /* Massage Info */
+    .container-massage-info {
+        margin-top: 4rem;
+        gap: 2rem;
     }
 }
 
