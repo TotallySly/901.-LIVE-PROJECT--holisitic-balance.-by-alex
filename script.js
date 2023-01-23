@@ -114,20 +114,20 @@ arrowLeft.addEventListener('click', () => {
     Reveal Boxes
  */
 
-// window.addEventListener('scroll', reveal)
+window.addEventListener('scroll', reveal)
 
-// function reveal() {
-//     let reveals = document.querySelectorAll('.reveal')
+function reveal() {
+    let reveals = document.querySelectorAll('.reveal')
 
-//     for (var i = 0; i < reveals.length; i++) {
-//         let windowHeight = window.innerHeight
-//         let revealTop = reveals[i].getBoundingClientRect().top
-//         let revealPoint = 150
+    for (var i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight
+        let revealTop = reveals[i].getBoundingClientRect().top
+        let revealPoint = 150
 
-//         if (revealTop < windowHeight - revealPoint) {
-//             reveals[i].classList.add('activeScroll')
-//         } else {
-//             reveals[i].classList.remove('activeScroll')
-//         }
-//     }
-// }
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('activeScroll')
+        } else {
+            reveals[i].classList.remove('activeScroll')
+        }
+    }
+}

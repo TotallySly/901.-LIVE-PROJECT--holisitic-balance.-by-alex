@@ -47,10 +47,26 @@ html {
     height: auto;
 }
 
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s;
+}
+
+.reveal.activeScroll {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 .container-reveal {
     background-color: var(--tertiary-colour);
     padding: 1rem;
     border-radius: 10px;
+}
+
+.container-fluid {
+    border: solid 4px green;
 }
 
 body {
@@ -125,11 +141,11 @@ ol {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding-right: 2rem;
 }
 
 .hamburger-container .fa-bars,
 .fa-x {
-    margin-right: 1.5rem;
     font-size: 1.5rem;
 }
 
@@ -182,9 +198,8 @@ i:hover {
     border-radius: 10px;
     width: 80vw;
     height: 50vh;
-
     padding-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     overflow: hidden;
 }
 
@@ -303,6 +318,7 @@ h3 {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(1, 1fr);
+    text-align: center;
 }
 
 .container-about-me img {
@@ -335,7 +351,7 @@ h3 {
     .carousel-container .carousel .slider .slide h1 {
         font-size: 4rem;
         width: fit-content;
-        top: 50vh;
+        top: 25rem;
         left: 0;
         right: 0;
         margin-left: auto;
@@ -359,10 +375,6 @@ h3 {
     /* About Me */
     .navigation-heading {
         font-size: 4rem;
-    }
-
-    .container-about-me {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .container-about-me p {
