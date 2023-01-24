@@ -61,7 +61,7 @@ html {
 
 .container-reveal {
     text-align: center;
-    max-width: 50rem;
+    max-width: 95vw;
     background-color: var(--tertiary-colour);
     padding: 1rem 2rem;
     border-radius: 10px;
@@ -340,7 +340,7 @@ h3 {
     justify-content: flex-start;
     align-items: center;
     margin-top: 2rem;
-    height: 100vh;
+    height: max-content;
 }
 
 .container-massage-info a {
@@ -348,7 +348,59 @@ h3 {
     font-weight: bold;
 }
 
-/* TODO SORT OUT THE MEDIA FOR THE CAROUSEL CONTAINER */
+/* TODO Fix the blurred text on the cards */
+
+.container-types-of-massage {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    border: solid 4px green;
+}
+
+.massage-card-container {
+    border: solid 2px blue;
+    height: 17rem;
+    width: 15rem;
+}
+
+.massage-card-container:hover > .massage-card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.massage-card {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.massage-card-front,
+.massage-card-back {
+    background-color: var(--tertiary-colour);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.massage-card-front {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+}
+
+.massage-card-back {
+    font-weight: bold;
+    padding: 2rem;
+    transform: rotateY(180deg);
+}
 
 @media (min-width: 768px) {
     /* Navigation Bar */
@@ -409,6 +461,10 @@ h3 {
     .container-massage-info {
         margin-top: 4rem;
         gap: 2rem;
+    }
+
+    .container-types-of-massage {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
