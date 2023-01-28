@@ -354,7 +354,7 @@ h3 {
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 2.5rem;
     margin: 5rem 0rem;
 }
 
@@ -379,7 +379,6 @@ h3 {
 
 .massage-card-front,
 .massage-card-back {
-    letter-spacing: 2px;
     background-color: var(--secondary-colour);
     color: var(--main-colour);
     height: 100%;
@@ -391,6 +390,7 @@ h3 {
 
 .massage-card-front {
     font-size: 1.5rem;
+    letter-spacing: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -427,7 +427,6 @@ h3 {
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
-    gap: 5rem;
 }
 
 .container-massage-price {
@@ -435,16 +434,37 @@ h3 {
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 .container-massage-price .massage-price {
     text-align: center;
     color: var(--main-colour);
+
     background-color: var(--secondary-colour);
     padding: 2rem;
     border-radius: 10px;
 }
+
+.container-massage-price .massage-price h1,
+h2 {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* 
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+MEDIA QUERIES
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+*/
 
 @media (min-width: 768px) {
     /* Navigation Bar */
@@ -507,8 +527,9 @@ h3 {
         gap: 2rem;
     }
 
-    .container-types-of-massage {
-        grid-template-columns: repeat(3, 1fr);
+    .massage-card-front,
+    .massage-card-back {
+        letter-spacing: 2px;
     }
 
     .container-massage-price {
@@ -519,5 +540,10 @@ h3 {
 @media (min-width: 1100px) {
     .carousel-container {
         width: 95vw;
+    }
+
+    .container-types-of-massage {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.2rem;
     }
 }
