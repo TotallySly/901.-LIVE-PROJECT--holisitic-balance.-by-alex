@@ -10,7 +10,7 @@
     --nav-heading-font: 'Oooh Baby', cursive;
 }
 
-/* .row {
+.row {
     border: solid 3px red;
 }
 
@@ -27,9 +27,10 @@
 .col-10,
 .col-11,
 .col-12,
-.col-sm {
+.col-sm,
+.col-md {
     border: solid 3px blue;
-} */
+}
 
 html {
     scroll-behavior: smooth;
@@ -498,6 +499,21 @@ h2 {
     color: var(--secondary-colour);
 }
 
+/* Yoga */
+
+.container-yoga .yoga-img {
+    text-align: center;
+    height: 50vh;
+    width: 100%;
+    background-image: url('assets/yogaposeathome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-yoga div {
+    margin-top: 3rem;
+}
+
 /* 
 **************************************************************
 **************************************************************
@@ -578,6 +594,7 @@ MEDIA QUERIES
         letter-spacing: 2px;
     }
 
+    /* Massage Price */
     .container-massage-price-info {
         height: 100%;
         display: flex;
@@ -602,6 +619,10 @@ MEDIA QUERIES
     p {
         font-size: 1.7rem;
     }
+
+    .container-yoga .yoga-img {
+        height: 100vh;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -612,5 +633,11 @@ MEDIA QUERIES
     .container-types-of-massage {
         grid-template-columns: repeat(3, 1fr);
         gap: 0.2rem;
+    }
+
+    .container-yoga {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
