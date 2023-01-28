@@ -40,15 +40,28 @@ hamburgerClose.addEventListener('click', () => {
  * event listener is added, that toggles the class back and forth.
  */
 
-const chevronMenu = document.querySelector('.fa-chevron-down')
-const dropDownMenu = document.querySelector('.smaller-menu-items')
+const chevronMenuMassage = document.querySelector('.nav-massage')
+const dropDownMenuMassage = document.querySelector('.smaller-menu-items-massage')
 
-chevronMenu.addEventListener('click', () => {
-    dropDownMenu.classList.remove('display-none')
+chevronMenuMassage.addEventListener('click', () => {
+    dropDownMenuMassage.classList.remove('display-none')
 
-    if (!dropDownMenu.classList.contains('display-none')) {
-        chevronMenu.addEventListener('click', () => {
-            dropDownMenu.classList.toggle('display-none')
+    if (!dropDownMenuMassage.classList.contains('display-none')) {
+        chevronMenuMassage.addEventListener('click', () => {
+            dropDownMenuMassage.classList.toggle('display-none')
+        })
+    }
+})
+
+const chevronMenuYoga = document.querySelector('.nav-yoga')
+const dropDownMenuYoga = document.querySelector('.smaller-menu-items-yoga')
+
+chevronMenuYoga.addEventListener('click', () => {
+    dropDownMenuYoga.classList.remove('display-none')
+
+    if (!dropDownMenuYoga.classList.contains('display-none')) {
+        chevronMenuYoga.addEventListener('click', () => {
+            dropDownMenuYoga.classList.toggle('display-none')
         })
     }
 })
