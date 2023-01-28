@@ -398,6 +398,10 @@ h3 {
 }
 
 .massage-card-back {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     padding: 2rem;
     transform: rotateY(180deg);
@@ -406,7 +410,8 @@ h3 {
 /* Massage Prices and Booking */
 
 .massage-img-background {
-    height: 110vh;
+    width: 100vw;
+    height: 120vh;
     background-image: url('/assets/stock-massage-img.png');
     position: relative;
     background-position: center;
@@ -440,7 +445,6 @@ h3 {
 .container-massage-price .massage-price {
     text-align: center;
     color: var(--main-colour);
-
     background-color: var(--secondary-colour);
     padding: 2rem;
     border-radius: 10px;
@@ -450,6 +454,48 @@ h3 {
 h2 {
     letter-spacing: 2px;
     font-weight: bold;
+}
+
+.discount-box {
+    width: 50vw;
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--main-colour);
+    background-color: var(--secondary-colour);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.discount-box p {
+    margin-bottom: 0;
+}
+
+.container-booking-info {
+    margin-top: 3rem;
+}
+
+.container-booking-info a {
+    color: var(--main-colour);
+    background-color: var(--secondary-colour);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.container-booking-info a:hover {
+    color: var(--secondary-colour);
+    background-color: var(--main-colour);
+    transition: all ease-in 0.5s;
+}
+
+.address {
+    margin-top: 3rem;
+    text-align: center;
+    opacity: 1;
+    background-color: var(--main-colour);
+}
+
+.address a {
+    color: var(--secondary-colour);
 }
 
 /* 
@@ -532,8 +578,20 @@ MEDIA QUERIES
         letter-spacing: 2px;
     }
 
+    .container-massage-price-info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
     .container-massage-price {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .discount-box {
+        margin-top: 0;
+        font-size: 2rem;
     }
 }
 
