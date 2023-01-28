@@ -540,11 +540,31 @@ h2 {
 }
 
 .container-yoga-classes .container-reveal:first-of-type {
+    background-color: var(--secondary-colour);
     margin-top: 10rem;
 }
 
 .container-yoga-classes .container-reveal:last-of-type {
+    background-color: var(--main-colour);
     margin-bottom: 2rem;
+}
+
+.container-yoga-classes h5 {
+    margin-top: 1rem;
+}
+
+.container-yoga-classes a {
+    color: var(--main-colour);
+    background-color: var(--secondary-colour);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.container-yoga-classes a:hover {
+    font-weight: bold;
+    color: var(--secondary-colour);
+    background-color: var(--main-colour);
+    transition: all ease-in 0.5s;
 }
 
 /* 
@@ -655,6 +675,10 @@ MEDIA QUERIES
 
     .container-yoga .yoga-img {
         height: 100vh;
+    }
+
+    .container-yoga-classes h5 {
+        font-size: 1.8rem;
     }
 
     /* .container-yoga-classes {
