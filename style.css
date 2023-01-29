@@ -138,7 +138,7 @@ ol {
 }
 
 .navigation-bar .logo > span:nth-of-type(even) {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     margin-left: -0.3rem;
 }
 
@@ -156,7 +156,7 @@ ol {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 2rem;
+    padding-right: 1.5rem;
 }
 
 .hamburger-container .fa-bars,
@@ -567,6 +567,17 @@ h2 {
     transition: all ease-in 0.5s;
 }
 
+.container-yoga-course {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2.5rem;
+    gap: 2rem;
+}
+
+.container-yoga-course p {
+    margin-bottom: 1rem;
+}
+
 /* 
 **************************************************************
 **************************************************************
@@ -681,9 +692,9 @@ MEDIA QUERIES
         font-size: 1.8rem;
     }
 
-    /* .container-yoga-classes {
-        grid-template-columns: repeat(3, 1fr);
-    } */
+    .container-yoga-course {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 1100px) {
