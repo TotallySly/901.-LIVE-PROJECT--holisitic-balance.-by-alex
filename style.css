@@ -574,6 +574,10 @@ h2 {
     gap: 2rem;
 }
 
+.container-yoga-course p:first-of-type {
+    margin-top: 2rem;
+}
+
 .container-yoga-course p {
     margin-bottom: 1rem;
 }
