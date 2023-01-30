@@ -582,6 +582,21 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.container-yoga-workshops {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2.5rem;
+    gap: 2rem;
+}
+
+.container-yoga-workshops p:first-of-type {
+    margin-top: 2rem;
+}
+
+.container-yoga-workshops p {
+    margin-bottom: 1rem;
+}
+
 /* 
 **************************************************************
 **************************************************************
