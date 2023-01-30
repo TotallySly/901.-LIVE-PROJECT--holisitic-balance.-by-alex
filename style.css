@@ -597,6 +597,17 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.container-contact-me {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2.5rem;
+    gap: 2rem;
+}
+
+.container-contact-me a {
+    color: black;
+}
+
 /* 
 **************************************************************
 **************************************************************
@@ -711,8 +722,8 @@ MEDIA QUERIES
         font-size: 1.8rem;
     }
 
-    .container-yoga-course {
-        grid-template-columns: repeat(2, 1fr);
+    .container-contact-me {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -730,5 +741,9 @@ MEDIA QUERIES
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .container-yoga-course {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
