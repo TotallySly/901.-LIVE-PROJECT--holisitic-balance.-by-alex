@@ -471,6 +471,16 @@ h2 {
     margin-bottom: 0;
 }
 
+.container-reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-reviews i {
+    padding: 0.5rem 0;
+    color: gold;
+}
+
 .container-booking-info {
     margin-top: 3rem;
 }
@@ -735,6 +745,40 @@ MEDIA QUERIES
     .container-types-of-massage {
         grid-template-columns: repeat(3, 1fr);
         gap: 0.2rem;
+    }
+
+    .container-reviews {
+        display: grid;
+        width: 80%;
+        margin: 0 auto;
+        gap: 0.5rem;
+        grid-template-columns: repeat(8, 1fr);
+        border: solid red 5px;
+    }
+
+    .review:nth-child(3) {
+        grid-column: 1 / 9;
+        grid-row: 5 / 8;
+    }
+
+    .review:nth-child(2) {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+    }
+
+    .review:nth-child(5) {
+        grid-column: 6 / 9;
+        grid-row: 1 / 5;
+    }
+
+    .review:nth-child(4) {
+        grid-column: 4 / 6;
+        grid-row: 3 / 5;
+    }
+
+    .review:nth-child(1) {
+        grid-column: 1 / 6;
+        grid-row: 1 / 4;
     }
 
     .container-yoga {
