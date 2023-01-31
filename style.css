@@ -749,16 +749,16 @@ MEDIA QUERIES
 
     .container-reviews {
         display: grid;
-        width: 80%;
-        margin: 0 auto;
+        /* width: 80%;
+        margin: 0 auto; */
         gap: 0.5rem;
         grid-template-columns: repeat(8, 1fr);
         border: solid red 5px;
     }
 
-    .review:nth-child(3) {
-        grid-column: 1 / 9;
-        grid-row: 5 / 8;
+    .review:nth-child(1) {
+        grid-column: 1 / 6;
+        grid-row: 1 / 4;
     }
 
     .review:nth-child(2) {
@@ -766,19 +766,19 @@ MEDIA QUERIES
         grid-row: 4 / 5;
     }
 
-    .review:nth-child(5) {
-        grid-column: 6 / 9;
-        grid-row: 1 / 5;
-    }
-
     .review:nth-child(4) {
         grid-column: 4 / 6;
         grid-row: 3 / 5;
     }
 
-    .review:nth-child(1) {
-        grid-column: 1 / 6;
-        grid-row: 1 / 4;
+    .review:nth-child(3) {
+        grid-column: 1 / 9;
+        grid-row: 5 / 8;
+    }
+
+    .review:nth-child(5) {
+        grid-column: 6 / 9;
+        grid-row: 1 / 5;
     }
 
     .container-yoga {
