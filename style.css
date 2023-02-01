@@ -608,15 +608,17 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* Contact Me */
 .container-contact-me {
+    height: 25vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-top: 2.5rem;
-    gap: 2rem;
 }
 
-.container-contact-me a {
-    color: black;
+.container-contact-me button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
 }
 
 /* 
