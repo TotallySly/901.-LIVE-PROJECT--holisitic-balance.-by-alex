@@ -610,15 +610,31 @@ h2 {
 
 /* Contact Me */
 .container-contact-me {
-    height: 25vh;
+    margin-top: 5rem;
+}
+
+.container-contact-me form {
+    padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.container-contact-me form input:nth-of-type(3) {
+    padding-bottom: 5rem;
 }
 
 .container-contact-me button {
-    background-color: black;
-    color: white;
+    color: var(--main-colour);
+    background-color: var(--secondary-colour);
     padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.container-contact-me button:hover {
+    color: var(--secondary-colour);
+    background-color: var(--main-colour);
+    transition: all ease-in 0.5s;
 }
 
 /* 
