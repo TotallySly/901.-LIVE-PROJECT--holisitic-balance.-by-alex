@@ -52,14 +52,16 @@ html {
 }
 
 .navigation-heading {
-    margin-top: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     font-family: var(--nav-heading-font);
 }
 
-.container-fluid {
+.container-fluid,
+.container {
     border: solid 4px green;
 }
 
@@ -301,7 +303,6 @@ h3 {
 /* About Me */
 .container-about-me {
     height: max-content;
-    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -311,7 +312,6 @@ h3 {
 
 .container-about-me img {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
     border-radius: 10px;
 }
 
@@ -321,7 +321,6 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 2rem;
     height: max-content;
 }
 
@@ -458,7 +457,6 @@ h2 {
 .container-reviews {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
     gap: 2rem;
 }
 
@@ -605,8 +603,6 @@ h2 {
 
 /* Contact Me */
 .container-contact-me {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
     width: 100vw;
 }
 
@@ -616,7 +612,6 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
     gap: 2.5rem;
 }
 
