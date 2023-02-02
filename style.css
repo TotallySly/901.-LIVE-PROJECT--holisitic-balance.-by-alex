@@ -611,6 +611,7 @@ h2 {
 /* Contact Me */
 .container-contact-me {
     margin-top: 5rem;
+    width: 100vw;
 }
 
 .container-contact-me form {
@@ -624,11 +625,11 @@ h2 {
 }
 
 .container-contact-me input {
-    padding: 0 20rem 0 0;
+    width: 75vw;
 }
 
 .container-contact-me form input:nth-of-type(3) {
-    padding-bottom: 5rem;
+    /* TODO FIX ME */
 }
 
 .container-contact-me button {
@@ -759,8 +760,8 @@ MEDIA QUERIES
         font-size: 1.8rem;
     }
 
-    .container-contact-me {
-        grid-template-columns: repeat(3, 1fr);
+    .container-contact-me form {
+        font-size: 1.7rem;
     }
 }
 
