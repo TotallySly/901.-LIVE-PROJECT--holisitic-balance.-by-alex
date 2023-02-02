@@ -60,10 +60,10 @@ html {
     font-family: var(--nav-heading-font);
 }
 
-.container-fluid,
+/* .container-fluid,
 .container {
     border: solid 4px green;
-}
+} */
 
 body {
     font-family: 'Zen Loop', cursive;
