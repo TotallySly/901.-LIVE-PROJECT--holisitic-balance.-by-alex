@@ -66,6 +66,7 @@ html {
     background-color: var(--tertiary-colour);
     padding: 1rem 2rem;
     border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container-reveal p {
@@ -331,6 +332,8 @@ h3 {
 }
 
 .container-about-me img {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     border-radius: 10px;
 }
 
@@ -387,6 +390,7 @@ h3 {
     position: absolute;
     backface-visibility: hidden;
     border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .massage-card-front {
@@ -445,10 +449,11 @@ h3 {
 
 .container-massage-price .massage-price {
     text-align: center;
-    color: var(--main-colour);
-    background-color: var(--secondary-colour);
+    color: var(--secondary-colour);
+    background-color: var(--main-colour);
     padding: 2rem;
     border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container-massage-price .massage-price h1,
@@ -461,10 +466,11 @@ h2 {
     width: 50vw;
     margin-top: 3rem;
     text-align: center;
-    color: var(--main-colour);
-    background-color: var(--secondary-colour);
+    color: var(--secondary-colour);
+    background-color: var(--main-colour);
     padding: 1rem;
     border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .discount-box p {
@@ -475,6 +481,7 @@ h2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
+    gap: 2rem;
 }
 
 .container-reviews i {
@@ -487,6 +494,8 @@ h2 {
 }
 
 .container-booking-info a {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     color: var(--main-colour);
     background-color: var(--secondary-colour);
     padding: 2rem;
@@ -519,6 +528,7 @@ h2 {
     background-image: url('assets/yogaposeathome.png');
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container-yoga div {
@@ -550,13 +560,16 @@ h2 {
     gap: 5rem;
 }
 
+.container-yoga-classes .container-reveal {
+    background-color: var(--main-colour);
+    color: var(--secondary-colour);
+}
+
 .container-yoga-classes .container-reveal:first-of-type {
-    background-color: var(--secondary-colour);
     margin-top: 10rem;
 }
 
 .container-yoga-classes .container-reveal:last-of-type {
-    background-color: var(--main-colour);
     margin-bottom: 2rem;
 }
 
@@ -565,6 +578,10 @@ h2 {
 }
 
 .container-yoga-classes a {
+    letter-spacing: 1.75px;
+    font-weight: bold;
+    margin-top: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: var(--main-colour);
     background-color: var(--secondary-colour);
     padding: 1rem;
@@ -574,7 +591,7 @@ h2 {
 .container-yoga-classes a:hover {
     font-weight: bold;
     color: var(--secondary-colour);
-    background-color: var(--main-colour);
+    background-color: var(--tertiary-colour);
     transition: all ease-in 0.5s;
 }
 
@@ -621,28 +638,31 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 .container-contact-me input {
-    width: 75vw;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 16rem;
 }
 
-.container-contact-me form input:nth-of-type(3) {
-    /* TODO FIX ME */
+.container-contact-me textarea {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container-contact-me button {
+    letter-spacing: 1.75px;
+    font-weight: bold;
     color: var(--main-colour);
     background-color: var(--secondary-colour);
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     border-radius: 10px;
-    max-width: 10vw;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container-contact-me button:hover {
     color: var(--secondary-colour);
-    background-color: var(--main-colour);
+    background-color: var(--tertiary-colour);
     transition: all ease-in 0.5s;
 }
 
@@ -777,7 +797,7 @@ MEDIA QUERIES
 
     .container-reviews {
         display: grid;
-        gap: 0.5rem;
+        gap: 2rem;
         grid-template-columns: repeat(8, 1fr);
     }
 
