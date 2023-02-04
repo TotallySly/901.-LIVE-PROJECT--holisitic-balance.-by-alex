@@ -30,7 +30,7 @@ html {
     position: relative;
     transform: translateY(3px);
     opacity: 0;
-    transition: all 2s;
+    transition: all 2.5s;
 }
 
 .reveal.activeScroll {
@@ -190,7 +190,7 @@ i:hover {
 
 /* Carousel Styling */
 .extra-container {
-    padding-top: 10rem;
+    padding-top: 15rem;
 }
 
 .container-fluid {
