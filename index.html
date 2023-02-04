@@ -17,64 +17,66 @@
         <title>Holistic Balance By Alex</title>
     </head>
     <body>
-        <nav class="navigation-bar">
-            <div class="row">
-                <div class="col-9">
-                    <a href="#" class="logo">
-                        <span>H</span>
-                        <span>olistic</span>
-                        <span>B</span>
-                        <span>alance</span>
-                        <div>
-                            <div>By Alex</div>
+        <section class="container-navigation">
+            <nav class="navigation-bar fixed-top">
+                <div class="row">
+                    <div class="col-9">
+                        <a href="#" class="logo">
+                            <span>H</span>
+                            <span>olistic</span>
+                            <span>B</span>
+                            <span>alance</span>
+                            <div>
+                                <div>By Alex</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <div class="hamburger-container d-sm-none">
+                            <button class="hamburger-control">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <button class="hamburger-control">
+                                <i class="fa-solid fa-x display-none"></i>
+                            </button>
                         </div>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <div class="hamburger-container d-sm-none">
-                        <button class="hamburger-control">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
-                        <button class="hamburger-control">
-                            <i class="fa-solid fa-x display-none"></i>
-                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="row navigation-links">
-                <div class="col-sm"><a href="#" id="home">Hem</a></div>
-                <div class="col-sm"><a href="#aboutMe">Om</a></div>
-                <div class="col-sm">
-                    <div>
-                        <a href="#massage">Massage</a>
-                        <button>
-                            <i class="fa-solid fa-chevron-down nav-massage"></i>
-                        </button>
+                <div class="row navigation-links">
+                    <div class="col-sm"><a href="#" id="home">Hem</a></div>
+                    <div class="col-sm"><a href="#aboutMe">Om</a></div>
+                    <div class="col-sm">
+                        <div>
+                            <a href="#massage">Massage</a>
+                            <button>
+                                <i class="fa-solid fa-chevron-down nav-massage"></i>
+                            </button>
+                        </div>
+                        <ul class="smaller-menu-items-massage display-none">
+                            <li><a href="#massageType">Massagebehandlinger</a></li>
+                            <li><a href="#massagePrice">Prislista</a></li>
+                            <li><a href="">Boka</a></li>
+                        </ul>
                     </div>
-                    <ul class="smaller-menu-items-massage display-none">
-                        <li><a href="#massageType">Massagebehandlinger</a></li>
-                        <li><a href="#massagePrice">Prislista</a></li>
-                        <li><a href="">Boka</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm">
-                    <div>
-                        <a href="#yoga">Yoga</a>
-                        <button>
-                            <i class="fa-solid fa-chevron-down nav-yoga"></i>
-                        </button>
+                    <div class="col-sm">
+                        <div>
+                            <a href="#yoga">Yoga</a>
+                            <button>
+                                <i class="fa-solid fa-chevron-down nav-yoga"></i>
+                            </button>
+                        </div>
+                        <ul class="smaller-menu-items-yoga display-none">
+                            <li><a href="#yogaClasses">Öppna Klasser</a></li>
+                            <li><a href="#yogaCourse">Kurser</a></li>
+                            <li><a href="#yogaWorkshop">Workshop/Event</a></li>
+                        </ul>
                     </div>
-                    <ul class="smaller-menu-items-yoga display-none">
-                        <li><a href="#yogaClasses">Öppna Klasser</a></li>
-                        <li><a href="#yogaCourse">Kurser</a></li>
-                        <li><a href="#yogaWorkshop">Workshop/Event</a></li>
-                    </ul>
+                    <div class="col-sm"><a href="#contactMe">Kontakt</a></div>
                 </div>
-                <div class="col-sm"><a href="#contactMe">Kontakt</a></div>
-            </div>
-        </nav>
+            </nav>
+        </section>
 
-        <section class="container-fluid">
+        <section class="container-fluid extra-container">
             <div class="carousel-container">
                 <div class="carousel">
                     <div class="slider">
@@ -213,7 +215,7 @@
         </section>
 
         <section class="container-fluid">
-            <h1 class="navigation-heading reveal" id="#massagePrice">Prislista</h1>
+            <h1 class="navigation-heading reveal" id="massagePrice">Prislista</h1>
         </section>
 
         <section class="massage-img-background">

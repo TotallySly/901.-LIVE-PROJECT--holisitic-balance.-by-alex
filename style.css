@@ -52,9 +52,9 @@ html {
 }
 
 .navigation-heading {
-    margin-top: 14rem;
+    margin-top: 15rem;
     margin-bottom: 4rem;
-    padding-top: 2rem;
+    padding-top: 12rem;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -101,8 +101,10 @@ ol {
 
 /* Navigation Bar Styling */
 /* Logo */
+
 .navigation-bar {
-    max-height: fit-content;
+    overflow: hidden;
+    max-height: max-content;
     width: 100vw;
     background-color: var(--secondary-colour);
     color: var(--main-colour);
@@ -187,15 +189,19 @@ i:hover {
 }
 
 /* Carousel Styling */
+.extra-container {
+    padding-top: 10rem;
+}
+
 .container-fluid {
     height: max-content;
 }
 
 .carousel-container {
+    position: relative;
     border-radius: 10px;
     width: 80vw;
     height: 50vh;
-    padding-top: 2rem;
     margin-left: 1.5rem;
     overflow: hidden;
 }
