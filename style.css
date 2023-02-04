@@ -28,7 +28,7 @@ html {
 
 .reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(3px);
     opacity: 0;
     transition: all 2s;
 }
@@ -52,8 +52,9 @@ html {
 }
 
 .navigation-heading {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 14rem;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -481,7 +482,7 @@ h2 {
 .container-booking-info a:hover {
     color: var(--secondary-colour);
     background-color: var(--main-colour);
-    transition: all ease-in 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 .address {
@@ -568,7 +569,7 @@ h2 {
     font-weight: bold;
     color: var(--secondary-colour);
     background-color: var(--tertiary-colour);
-    transition: all ease-in 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 .container-yoga-course {
@@ -625,6 +626,7 @@ h2 {
 }
 
 .container-contact-me button {
+    margin-bottom: 3rem;
     letter-spacing: 1.75px;
     font-weight: bold;
     color: var(--main-colour);
@@ -637,7 +639,7 @@ h2 {
 .container-contact-me button:hover {
     color: var(--secondary-colour);
     background-color: var(--tertiary-colour);
-    transition: all ease-in 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 /* Footer */
