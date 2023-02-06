@@ -13,6 +13,24 @@ const navigationLinks = document.querySelector('.navigation-links')
 
 if (window.innerWidth < 575) {
     navigationLinks.classList.add('display-none')
+
+    const hamburgerNavItemsLi = document.querySelectorAll('li')
+
+    hamburgerNavItemsLi.forEach((hamburgerNavItem) => {
+        hamburgerNavItem.addEventListener('click', () => {
+            navigationLinks.classList.add('display-none')
+        })
+    })
+
+    const navigationAnchorLinks = document.querySelectorAll('.navigation-links a')
+
+    navigationAnchorLinks.forEach((navigationAnchorLink) => {
+        navigationAnchorLink.addEventListener('click', () => {
+            navigationLinks.classList.toggle('display-none')
+            hamburgerClose.classList.add('display-none')
+            hamburgerOpen.classList.remove('display-none')
+        })
+    })
 } else {
     navigationLinks.classList.remove('display-none')
 }
@@ -29,28 +47,10 @@ hamburgerClose.addEventListener('click', () => {
     hamburgerClose.classList.add('display-none')
 })
 
-const hamburgerNavItemsLi = document.querySelectorAll('li')
-
-hamburgerNavItemsLi.forEach((hamburgerNavItem) => {
-    hamburgerNavItem.addEventListener('click', () => {
-        navigationLinks.classList.add('display-none')
-    })
-})
-
 /**
  * Closes the Navigation link when a link is clicked. However, I need to figure
  * out how to remove the hamburger icons a second time round.
  */
-
-const navigationAnchorLinks = document.querySelectorAll('.navigation-links a')
-
-navigationAnchorLinks.forEach((navigationAnchorLink) => {
-    navigationAnchorLink.addEventListener('click', () => {
-        navigationLinks.classList.toggle('display-none')
-        hamburgerClose.classList.add('display-none')
-        hamburgerOpen.classList.remove('display-none')
-    })
-})
 
 /**
  * Initially, every time the webpage loaded, the dropdown menu was
