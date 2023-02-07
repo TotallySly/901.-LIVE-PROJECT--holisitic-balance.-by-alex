@@ -37,18 +37,6 @@ if (window.innerWidth < 575) {
 }
 
 /* TODO - Fix this so the navigation appears and disappears upon scroll. Scroll Y and let */
-window.onscroll = function () {
-    scrollFunction()
-}
-
-function scrollFunction() {
-    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 50) {
-        navigationLinks.style.fontSize = '1.3rem'
-        navigationBar.style.padding = '0.1rem'
-    } else {
-        navigationLinks.style.fontSize = '1.8rem'
-    }
-}
 
 hamburgerOpen.addEventListener('click', () => {
     navigationLinks.classList.toggle('display-none')
