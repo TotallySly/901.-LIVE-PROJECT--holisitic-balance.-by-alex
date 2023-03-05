@@ -255,7 +255,7 @@ h3 {
 .carousel-slide-img-one {
     height: 100%;
     width: 100%;
-    background-image: url('assets/massage-stock-image.png');
+    background-image: url('assets/website-images/stock-massage-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -277,7 +277,7 @@ h3 {
 .carousel-slide-img-two {
     height: 100%;
     width: 100%;
-    background-image: url('assets/yoga-pose-marmaid-on-rock.png');
+    background-image: url('assets/website-images/yoga-pose-marmaid-on-rock.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -508,7 +508,7 @@ h2 {
     text-align: center;
     height: 50vh;
     width: 100%;
-    background-image: url('assets/yogaposeathome.png');
+    background-image: url('assets/website-images/yogaposeathome.png');
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -520,7 +520,7 @@ h2 {
 
 .btm-yoga-img {
     height: max-content;
-    background-image: url('assets/childs-pose-test.png');
+    background-image: url('assets/website-images/childs-pose-test.png');
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
